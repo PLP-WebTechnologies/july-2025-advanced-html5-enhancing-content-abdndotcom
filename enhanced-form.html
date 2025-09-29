@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Page with Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Sample Web Page</h1>
+    <p>This page demonstrates lists, tables, media, and an accessible HTML5 form with validation.</p>
+  </header>
+
+  <main>
+    <!-- SECTION 1: LISTS -->
+    <section>
+      <h2>Popular Web Development Skills</h2>
+      <ul>
+        <li>HTML5 & Semantic Markup</li>
+        <li>CSS3 & Responsive Design</li>
+        <li>JavaScript & DOM Manipulation</li>
+        <li>Backend Development (Node.js, Django)</li>
+        <li>Database Management (MySQL, PostgreSQL)</li>
+      </ul>
+
+      <h3>Learning Roadmap</h3>
+      <ol>
+        <li>Learn HTML and CSS basics</li>
+        <li>Practice building simple web pages</li>
+        <li>Move to JavaScript and interactivity</li>
+        <li>Understand backend technologies</li>
+        <li>Work on full-stack projects</li>
+      </ol>
+    </section>
+
+    <!-- SECTION 2: TABLE -->
+    <section>
+      <h2>Sample Table: Web Tech Overview</h2>
+      <table border="1">
+        <caption>Comparison of Core Web Technologies</caption>
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Primary Use</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Structure</td>
+            <td>&lt;header&gt;, &lt;section&gt;, &lt;footer&gt;</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Styling</td>
+            <td>Color, Layout, Animation</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Behavior</td>
+            <td>Form Validation, DOM Manipulation</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 3: MEDIA -->
+    <section>
+      <h2>Media Examples</h2>
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Sample Image of Web Design">
+        <figcaption>Sample Image: Placeholder representing web design concept</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample Audio: Background Music</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="400">
+          <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+        <figcaption>Sample Video: Short Clip</figcaption>
+      </figure>
+    </section>
+
+    <!-- SECTION 4: FORM -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+          <br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters">
+          <br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+          <br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="08012345678" pattern="[0-9]{11}" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <br><br>
+
+          <span>Subscribe to Newsletter:</span>
+          <label><input type="radio" name="subscribe" value="yes" required> Yes</label>
+          <label><input type="radio" name="subscribe" value="no"> No</label>
+          <br><br>
+
+          <label for="comments">Additional Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your message..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Terms & Conditions</legend>
+          <label>
+            <input type="checkbox" name="agree" required>
+            I agree to the <a href="#">terms and conditions</a>.
+          </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Sample Web Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
